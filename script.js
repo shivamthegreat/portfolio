@@ -1,3 +1,5 @@
+
+
 // ----------------------
 // Navbar toggle (hamburger menu)
 // ----------------------
@@ -38,4 +40,13 @@ window.addEventListener("scroll", () => {
       bar.style.width = width + "%";
     });
   }
+});
+
+// ----------------------
+// Initialize AOS (Animate On Scroll)
+// ----------------------
+AOS.init({
+  duration: 1000,   // Animation duration (in ms)
+  once: false,      // Animation happens every time you scroll
+  mirror: true,     // Animate out when scrolling up
 });
